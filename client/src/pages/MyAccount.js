@@ -16,7 +16,7 @@ function MyAccount() {
     if (sessionStorage.user){user = ' ' + sessionStorage.user}
     if (sessionStorage.fullName){name = ' ' + sessionStorage.fullName}
     if (sessionStorage.email){email = ' ' + sessionStorage.email}
-    if (sessionStorage.registerDate){date = ' ' + sessionStorage.registerDate}
+    if (sessionStorage.registerDate){date = ' ' + sessionStorage.enrollDate}
 
 	return (
 		<div className="text-center">
@@ -34,7 +34,7 @@ function MyAccount() {
                             <h3 className="text-center">{'Name:' + name} </h3>
                             <h3 className="text-center">{'Username:' + user} </h3>
                             <h3 className="text-center">{'Email:' + email} </h3>
-                            <h3 className="text-center">{'Member Since:' + date} </h3>
+                            <h3 className="text-center">{'Member Since: ' + sessionStorage.enrollDate} </h3>
 
 						</Col>
 					</Row>

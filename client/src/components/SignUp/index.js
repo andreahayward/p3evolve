@@ -57,7 +57,7 @@ axios.post('/api/user',{
             sessionStorage.setItem('loginStatus', this.state.loggedIn)
             sessionStorage.setItem('user', response.data.displayName)
             sessionStorage.setItem('email', response.data.email)
-            sessionStorage.setItem('email', response.data.userID)
+            sessionStorage.setItem('userID', response.data.userID)
             this.props.history.push('/landing')
             } 
         else {

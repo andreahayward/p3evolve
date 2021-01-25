@@ -109,8 +109,8 @@ render(){
 
 
 
-						<button type="submit" className="btn btn-primary myButton">
-							Save Reflection
+						<button type="submit" className="btn btn-primary myButton" onClick={this.getData}>
+							Get Reflections
 						</button>
 					</Card.Body>
 				</Card>
